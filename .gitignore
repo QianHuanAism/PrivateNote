@@ -21,3 +21,6 @@ Gemfile.lock
 *.bat
 bun.lock
 node_modules/
+.vscode/
+dist/
+cache/
