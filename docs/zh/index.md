@@ -6,6 +6,12 @@ hero:
   name: "QianHuan 私人笔记"
   text: "私人笔记站点"
   tagline: 普普通通的私人笔记
+  actions:
+    - text: 开始阅读
+      link: /zh/csharp/简介
+    - text: VitePress2.0 文档
+      theme: alt
+      link: /zh/vitepress/快速开始
 
 # features:
 #   - title: Feature A
