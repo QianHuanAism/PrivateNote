@@ -28,14 +28,18 @@ function nav(base: string): DefaultTheme.NavItem[] {
                     text: 'C# 学习笔记',
                     link: base + 'csharp/简介'
                 },
-                {
-                    text: 'C++ 学习笔记',
-                    link: base + 'cpp',
-                },
-                {
-                    text: '数学笔记',
-                    link: base + 'math',
-                },
+                // {
+                //     text: 'C++ 学习笔记',
+                //     link: base + 'cpp',
+                // },
+                // {
+                //     text: '数学笔记',
+                //     link: base + 'math',
+                // },
+                // {
+                //     text: 'SSMT 学习笔记',
+                //     link: base + 'ssmt',
+                // },
             ]
         }
     ]
@@ -47,10 +51,22 @@ function sidebarEnvironment(): DefaultTheme.SidebarItem[] {
             text: 'C#',
             collapsed: false,
             items: [
-                { text: 'C# 简介', link: '/简介/' },
-                { text: '开发环境搭建', link: '/开发环境搭建/' },
-                { text: '项目创建', link: '/项目创建/' },
-                { text: '项目结构介绍', link: '/项目结构介绍/' }
+                {
+                    text: 'C# 简介',
+                    link: '/简介/'
+                },
+                {
+                    text: '开发环境搭建',
+                    link: '/开发环境搭建/'
+                },
+                {
+                    text: '项目创建',
+                    link: '/项目创建/'
+                },
+                { 
+                    text: '项目结构介绍', 
+                    link: '/项目结构介绍/'
+                }
             ]
         },
         {
@@ -64,17 +80,23 @@ function sidebarEnvironment(): DefaultTheme.SidebarItem[] {
                         { text: '变量类型', link: '/csharpBase/变量类型/' }
                     ]
                 },
-                { text: '类型系统', link: '/csharpBase/类型系统/' },
+                {
+                    text: '类型系统',
+                    link: '/csharpBase/类型系统/',
+                    items: [
+                        {text: '类型系统 - 延伸', link: '/csharpBase/类型系统.延伸/'}
+                    ]
+                },
                 { text: '常量', link: '/csharpBase/常量/' }
             ]
         },
-        {
-            text: 'C# 高级',
-            collapsed: false,
-            items: [
+        // {
+        //     text: 'C# 高级',
+        //     collapsed: false,
+        //     items: [
                 
-            ]
-        }
+        //     ]
+        // }
     ]
 }
 

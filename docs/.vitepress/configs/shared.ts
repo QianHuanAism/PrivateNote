@@ -1,10 +1,12 @@
 import { defineConfig } from 'vitepress'
+import { math } from './math'
 
 export const shared = defineConfig({
     title: "QianHuan Private Note",
     description: "A private note",
     base: '/PrivateNote/',
     cleanUrls: true,
+    ...math,
     themeConfig: {
         // https://vitepress.dev/reference/default-theme-config
         siteTitle: 'Private Note',
