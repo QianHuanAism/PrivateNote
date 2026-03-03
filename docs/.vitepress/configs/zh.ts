@@ -8,7 +8,8 @@ export const zh = defineConfig({
         nav: nav("/zh/"),
         sidebar: {
             '/zh/csharp/': { items: sidebarEnvironment(), base: '/zh/csharp/' },
-            '/zh/vitepress/': { items: sidebarVitePress(), base: '/zh/vitepress/' }
+            '/zh/vitepress/': { items: sidebarVitePress(), base: '/zh/vitepress/' },
+            '/zh/regex/': { items: sidebarRegex(), base: '/zh/regex/'}
         }
     }
 })
@@ -28,6 +29,10 @@ function nav(base: string): DefaultTheme.NavItem[] {
                     text: 'C# 学习笔记',
                     link: base + 'csharp/简介'
                 },
+                {
+                    text: 'Regex 学习笔记',
+                    link: base + 'regex/简介'
+                }
                 // {
                 //     text: 'C++ 学习笔记',
                 //     link: base + 'cpp',
@@ -109,6 +114,18 @@ function sidebarVitePress(): DefaultTheme.SidebarItem[] {
                 { text: '快速开始', link: '/快速开始/' }
             ]
         },
+    ]
+}
+
+function sidebarRegex(): DefaultTheme.SidebarItem[] {
+    return [
+        {
+            text: 'Regex',
+            collapsed: false,
+            items: [
+                { text: '简介', link: '/简介/'}
+            ]
+        }
     ]
 }
 
